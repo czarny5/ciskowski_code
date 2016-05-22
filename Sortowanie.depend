@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1462484911 source:c:\users\foto\documents\github\ciskowski-zad-7\sortowanie\main.cpp
+	<iostream>
+	"SortingAlgoritms.h"
+	"cstdlib"
+	"ctime"
+
+1462485976 c:\users\foto\documents\github\ciskowski-zad-7\sortowanie\include\sortingalgoritms.h
+	<SmartPtrArray.h>
+	<algorithm>
+
+1462328641 c:\users\foto\documents\github\ciskowski-zad-7\sortowanie\include\smartptrarray.h
+	<memory>
+
