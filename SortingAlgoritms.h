@@ -311,7 +311,7 @@ namespace SortingAlgoritms
             merge(tmp_left, tmp_right, array_after);
             if(array_before.array!=nullptr)
                 array_before.array.reset();
-            array_before=std::move(array_after);
+            array_before=array_after;
         }
     }
 
