@@ -34,6 +34,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="debugging_tolls.h" />
 		<Unit filename="include/SmartPtrArray.h" />
 		<Unit filename="include/SortingAlgoritms.h" />
 		<Unit filename="main.cpp" />

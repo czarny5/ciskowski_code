@@ -12,3 +12,22 @@
 1462328641 c:\users\foto\documents\github\ciskowski-zad-7\sortowanie\include\smartptrarray.h
 	<memory>
 
+1464011586 source:c:\users\foto\documents\github\ciskowski_code\main.cpp
+	<iostream>
+	<ctime>
+	"SortingAlgoritms.h"
+	<cstdlib>
+	"debugging_tolls.h"
+
+1464011623 c:\users\foto\documents\github\ciskowski_code\include\sortingalgoritms.h
+	<SmartPtrArray.h>
+	<algorithm>
+
+1464006089 c:\users\foto\documents\github\ciskowski_code\include\smartptrarray.h
+	<memory>
+	"../debugging_tolls.h"
+
+1461845334 c:\users\foto\documents\github\ciskowski_code\debugging_tolls.h
+	<assert.h>
+	<iostream>
+
