@@ -5,6 +5,8 @@
 template <typename T>
 struct SmartPtrArray
 {
+    int amount;
+    std::unique_ptr<T[]> array;
     SmartPtrArray(){}
     SmartPtrArray(int i): array(new T[i]), amount(i){}
     void init(int i)
@@ -16,26 +18,24 @@ struct SmartPtrArray
         }else
             std::cerr<<"Pamiec juz zaalokowana,  wystapil blad"<<std::endl;
     }
-   /* SmartPtrArray operator = (SmartPtrArray compared[i])
+    SmartPtrArray operator = (SmartPtrArray& compared)
     {
-        if(array==nullptr)
+        if(compared.array!=nullptr)
         {
-            init(int i);
+            if(array)
+                array.reset();
+            array=move(std::unique_ptr<T[]>(new T[compared.amount]));
+            amount = compared.amount;
+            for(auto i=0; i<amount; i++)
+                array[i]=compared.array[i];
         }else
         {
-            array=move(std::unique_ptr<T[]>(new T[i]));
-            amount = compared.amount;
+            if(array)
+                array.reset();
+            amount=0;
         }
     }
-        array=
-        amount=
-    }
 
-*/
-
-
-    int amount;
-    std::unique_ptr<T[]> array;
 };
 template <typename T>
 struct SmartPtrArrayIterrator
